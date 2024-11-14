@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 5px;
+    }
+
+    .header h2 {
+      font-size: 1.2rem;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .main-content {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .left-column,
+    .right-column {
+      flex: 1;
+      min-width: 200px;
+      padding: 20px;
+    }
+
+    .left-column {
+      border-right: 2px solid #ccc; /* Adds vertical line */
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .contact a {
+      color: #0073e6;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .skills,
+    .experience-item ul,
+    .project-item ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .experience-item ul,
+    .project-item ul {
+      margin-top: 5px;
+      padding-left: 20px;
+    }
+
+    .experience-item ul li,
+    .project-item ul li {
+      color: #333;
+    }
+
+    .education p,
+    .about p {
+      color: #555;
+    }
+
+    /* Projects section */
+    .projects-section {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .projects {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+      .left-column {
+        border-right: none;
+        border-bottom: 2px solid #ccc; /* Adds horizontal line on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>AADESH KUMAR</h1>
+      <hr>
+      <h2>FULL STACK DEVELOPER</h2>
+      <hr>
+    </div>
+
+    <div class="main-content">
+      <!-- Left Column -->
+      <div class="left-column">
+        <div class="contact">
+          <h3 class="section-title">CONTACT</h3>
+          <p><a href="mailto:aadeshk306@gmail.com"><i class="fas fa-envelope"></i> aadeshk306@gmail.com</a></p>
+          <p><a href="https://github.com/aadesh-kumarr"><i class="fab fa-github"></i> GitHub: aadesh-kumarr</a></p>
+          <p><a href="https://www.linkedin.com/in/aadesh-kumar/"><i class="fab fa-linkedin"></i> LinkedIn: aadesh-kumar</a></p>
+        </div>
+
+        <div class="skills">
+          <h3 class="section-title">SKILLS</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript, TypeScript</li>
+            <li>React.js, Next.js</li>
+            <li>Node.js, Python, Django</li>
+            <li>MongoDB, Git, Selenium</li>
+            <li>Canva, VS Code</li>
+          </ul>
+        </div>
+
+        <div class="education">
+          <h3 class="section-title">EDUCATION</h3>
+          <p><strong>B.Tech in Computer Science Engineering</strong></p>
+          <p>Doon Institute of Engineering and Technology, Rishikesh</p>
+          <p>2021 - 2025</p>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="right-column">
+        <div class="about">
+          <h3 class="section-title">ABOUT</h3>
+          <p>Dedicated Full Stack Developer with expertise in building scalable web applications using React.js, Next.js, and Python-Django. Passionate about innovative solutions and eager to contribute to tech-driven companies.</p>
+        </div>
+
+        <div class="work-experience">
+          <h3 class="section-title">WORK EXPERIENCE</h3>
+          <div class="experience-item">
+            <p><strong>Market Analysis and Node Development Intern</strong></p>
+            <p>Lostronaunt Ltd.</p> 
+            <p>Aug 2024 - Oct 2024</p>
+            <ul>
+              <li>Conducted in-depth market analysis to inform product development.</li>
+              <li>Developed backend services in Node.js for enhanced application functionality.</li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <p><strong>Machine Learning and Data Science Intern</strong></p>
+            <p>Edureka</p>
+            <p>Aug 2019 - Oct 2019</p>
+            <ul>
+              <li>Applied machine learning techniques for data-driven solutions.</li>
+              <li>Collaborated on data analysis projects using Python and data science libraries.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<hr>
+    <!-- Projects Section -->
+    <div class="projects-section" style="text-align: justify;">
+      <div class="projects">
+        <h3 class="section-title" style="text-align: center;">PROJECTS</h3>
+        <div class="project-item">
+          <p><strong>E-commerce Website</strong></p>
+          <ul>
+            <li>Developed a responsive e-commerce website for a store selling imitation and other items.</li>
+            <li>Features include an admin panel, product tracking, a payment gateway, and coupons.</li>
+            <li>Built using Next.js, Node.js, and Sanity.io.</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <p><strong>Portfolio Website</strong></p>
+          <ul>
+            <li>Designed and developed a personal portfolio website to showcase projects and skills.</li>
+            <li>Utilized HTML, CSS, and JavaScript for a responsive design.</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <p><strong>WhatsApp Bulk Messaging Software</strong></p>
+          <ul>
+            <li>Automated bulk messaging and video sharing, reducing manual effort by 300 hours annually.</li>
+            <li>Implemented using Python and Selenium for scheduling and optimizing message delivery.</li>
+          </ul>
+        </div>
+        <div class="project-item">
+          <p><strong>Automated WhatsApp Broadcast Tool</strong></p>
+          <ul>
+            <li>Built a tool to automate WhatsApp broadcast messages for increased reach and efficiency.</li>
+            <li>Enhanced processing speed by 20% and message delivery speed by 40%.</li>
+            <li>Utilized Python for automation and data scheduling.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
